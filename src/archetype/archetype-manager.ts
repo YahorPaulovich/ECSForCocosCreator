@@ -5,11 +5,12 @@
  * @license     MIT
  */
 
-import { Archetype } from "./Archetype.ts";
 import { BooleanArray } from "@phughesmcr/booleanarray";
+
+import type { ComponentInstance } from "../component/component-instance.ts";
 import { NotRegisteredError } from "../errors.ts";
-import type { ComponentInstance } from "../component/ComponentInstance.ts";
 import type { Entity, QueryInstance } from "../types.ts";
+import { Archetype } from "./archetype.ts";
 
 /** ArchetypeManager handles creation and allocation of Archetypes */
 export class ArchetypeManager {

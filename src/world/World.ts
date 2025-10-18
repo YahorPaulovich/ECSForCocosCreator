@@ -7,17 +7,16 @@
 
 import { BooleanArray } from "@phughesmcr/booleanarray";
 
+import { ArchetypeManager } from "@/archetype/archetype-manager.ts";
+import type { Archetype } from "@/archetype/archetype.ts";
+import type { ComponentInstance } from "@/component/component-instance.ts";
+import type { Component } from "@/component/component.ts";
 import { $_ARCHETYPE_KEY, $_QUERY_KEY, VERSION } from "@/constants.ts";
-import { ArchetypeManager } from "@/archetype/ArchetypeManager.ts";
-import { ComponentManager } from "@/component/ComponentManager.ts";
-import { EntityManager } from "@/entity/EntityManager.ts";
+import { EntityManager } from "@/entity/entity-manager.ts";
 import { NotRegisteredError, SpecError, WorldStateError } from "@/errors.ts";
-import { QueryManager } from "@/query/QueryManager.ts";
-import { SystemManager } from "@/system/SystemManager.ts";
-import type { Component } from "@/component/Component.ts";
-import type { Archetype } from "@/archetype/Archetype.ts";
-import type { ComponentInstance } from "@/component/ComponentInstance.ts";
-import type { Query } from "@/query/Query.ts";
+import { QueryManager } from "@/query/query-manager.ts";
+import type { Query } from "@/query/query.ts";
+import { SystemManager } from "@/system/system-manager.ts";
 import type {
   Entity,
   QueryInstance,
@@ -30,6 +29,7 @@ import type {
   WorldState,
   WorldSystemAPI,
 } from "@/types.ts";
+import { ComponentManager } from "../component/component-manager.ts";
 import { assertWorldState, isValidWorldSpec } from "./utils.ts";
 
 /** The World is the central context in which all Entities and Components exist. */

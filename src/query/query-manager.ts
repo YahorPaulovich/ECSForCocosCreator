@@ -6,13 +6,14 @@
  */
 
 import { BooleanArray } from "@phughesmcr/booleanarray";
-import { QueryCache } from "./QueryCache.ts";
-import { QueryResultPool } from "./QueryPool.ts";
-import type { Archetype } from "../archetype/Archetype.ts";
-import type { ComponentInstance } from "../component/ComponentInstance.ts";
+
+import type { Archetype } from "../archetype/archetype.ts";
+import type { ComponentInstance } from "../component/component-instance.ts";
 import type { ComponentInstanceGetter, Entity, QueryInstance, SchemaOrNull } from "../types.ts";
-import type { Query } from "./Query.ts";
-import type { World } from "../world/World.ts";
+import type { World } from "../world/world.ts";
+import { QueryCache } from "./query-cache.ts";
+import { QueryResultPool } from "./query-pool.ts";
+import type { Query } from "./query.ts";
 
 /**
  * @internal
