@@ -1,52 +1,32 @@
-# Intermediate build steps / generated files
 build/
-types/
+dist/
+node_modules/
 
-# API keys and secrets
+.cursorrules
+
 .env
 .env.*
-
-# Node/NPM directories
 .npm
-node_modules/
-npm-debug.log
+deno.lock
 package-lock.json
+package.json
 
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional eslint cache
-.eslintcache
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-
-# Folder config file
-.DS_Store
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Thumbnails
 ._*
-
-# Files that might appear in the root of a volume
+.com.apple.timemachine.donotpresent
 .DocumentRevisions-V100
+.DS_Store
 .fseventsd
 .Spotlight-V100
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
-.com.apple.timemachine.donotpresent
+$RECYCLE.BIN/
+Desktop.ini
+ehthumbs_vista.db
+ehthumbs.db
+Thumbs.db
+
+*.dll
+
+bun.lockb
+.npmrc
