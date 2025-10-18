@@ -4,9 +4,9 @@
 
 | Version  | Supported          |
 | -------- | ------------------ |
-| 0.11.x   | :white_check_mark: |
-| < 0.11   | :x:                |
+| 1.0.0    | :white_check_mark: |
+| < 1.0.0  | :x:                |
 
 ## Reporting a Vulnerability
 
-To disclose a vulnerability, email ```miski@phugh.es```
+To disclose a vulnerability, email ```github@phugh.es```
